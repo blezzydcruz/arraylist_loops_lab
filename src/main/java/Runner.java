@@ -14,16 +14,34 @@ public class Runner {
         scottishIslands.add("Islay");
         scottishIslands.add("Mull");
         scottishIslands.add("Skye");
+        scottishIslands.add("Aaran");
+        scottishIslands.add("Tresco");
         scottishIslands.add("Coll");
 
 //        1. Add "Coll" to the end of the list
 //        2. Add "Tiree" to the start of the list
 //        3. Add "Islay" after "Jura" and before "Mull"
+
+        System.out.println("Scottish Islands: " +scottishIslands);
+
 //        4. Print out the index position of "Skye"
+
         System.out.println("Index position of Skye: " + scottishIslands.indexOf("Skye"));
 
 //        5. Remove "Tresco" from the list by name
+
+        scottishIslands.remove("Tresco");
+
+        System.out.println("Scottish Islands excluding Tresco: " + scottishIslands);
+
 //        6. Remove "Arran" from the list by index
+
+        int indexRemove = scottishIslands.indexOf("Aaran");
+        scottishIslands.remove(indexRemove);
+
+        System.out.println("Scottish Islands excluding Tresco & Aaran: " +scottishIslands);
+
+
 //        7. Print the number of islands in your arraylist
 
         System.out.println("Number of Island: " +scottishIslands.size());
